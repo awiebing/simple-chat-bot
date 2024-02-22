@@ -52,10 +52,20 @@ public class SimpleBot {
         System.out.println("2. @wrongAnswer");
         System.out.println("3. 2maybeThis");
         System.out.println("4. boolean");
-        int answer = scanner.nextInt();
-        if(answer != 1) {
+        int answer = 0;
+        while(answer != 1) {
+            answer = scanner.nextInt();
+            if(answer == 1) {
+                break;
+            }
             System.out.println("Please, try again.");
+        // int answer = scanner.nextInt();
+        // while(answer != 1){
+        // if(answer != 1) {
+        //    System.out.println("Please, try again.");
+
         }
+
     }
 
     static void end() {
